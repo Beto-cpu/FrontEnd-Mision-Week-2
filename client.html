@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente</title>
+
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+    <header class="header-main-container">
+        <div class="header-first-container">
+            <a href="/index.html"><img src="./assets/img/Crystal Cakes.png" alt="Icon" height="120"></a>
+        </div>
+        <div class="header-second-container">
+            <nav>
+                <ul>
+                    <li class="nav-link"><a href="/client.html">Cliente</a></li>
+                    <li class="nav-link"><a href="/manager.html">Administrador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="client-form-container">
+        <form class="form">
+            <h2>
+                Formulario
+            </h2>
+            <div>
+                <h3>Datos del cliente</h3>
+
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name"/>
+
+                <label for="mail">Correo Electrónico</label>
+                <input type="email" name="mail" id="mail"/>
+
+            </div>
+            <div>
+                <h3>Datos del pedido</h3>
+
+                <label for="description">Descripción General</label>
+                <textarea rows="4" name="description" id="description" style="resize: none;"> </textarea>
+
+                <h4>Sabores</h4>
+                <div class="sub-form">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="flavor1" name="flavor1">
+                        <label for="flavor1">Chocolate || $50</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="flavor2" name="flavor2">
+                        <label for="flavor2">Vainilla || $60</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="flavor3" name="flavor3">
+                        <label for="flavor3">Fresa || $55</label>
+                    </div>
+                </div>
+
+                <h4>Decoraciones</h4>
+                <div class="sub-form">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="flavor1" name="flavor1">
+                        <label for="flavor1">Estrellas || $30</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="flavor2" name="flavor2">
+                        <label for="flavor2">Espirales || $100</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="flavor3" name="flavor3">
+                        <label for="flavor3">Mensaje || $20</label>
+                    </div>
+                </div>
+
+                <button type="submit">Finalizar</button>
+            </div>
+        </form>
+    </section>
+    
+    <footer>
+        Todos los derechos recervados ©
+    </footer>
+</body>
+</html>
